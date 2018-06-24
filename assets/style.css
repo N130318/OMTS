@@ -1,0 +1,35 @@
+fieldset{
+	width:550px;border:2px solid #2370BC;box-shadow:15px 10px 10px #2370BC;background-color:lightgray;border-radius:25px;
+}
+legend{
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size:18px;
+    text-transform:uppercase;
+}
+tr,td{
+	font-weight:normal;
+}
+tr td a{
+	font-weight:normal;
+	font-size:15px;
+}
+tr td a:hover{
+	font-weight:bolder;
+	font-size:15px;
+	color:#ED7E1B;
+	text-shadow: 0 0 5px #F1A00F;
+}
+input,textarea,select{
+	border: 1px solid #DDDDDD;
+}
+tr td input:focus,textarea:focus,select:focus{
+	border: 1px solid #2370BC;
+	box-shadow: 0 0 5px #2370BC;
+}
+#logout{
+	font-weight:bolder;
+	font-size:25px;
+	color:#ED7E1B;
+	text-shadow: 0 0 5px #F1A00F;
+}

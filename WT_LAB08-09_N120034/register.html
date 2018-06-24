@@ -1,0 +1,58 @@
+<!-- VENKATESH KALISETTY ( N120034 ) E3CSE01 / ST06 -->
+<!DOCTYPE HTML>	
+<html>
+	<head>
+		<title>Registration</title>
+		<link rel="stylesheet" href="assets/style.css" type="text/css" >
+        <script src="assets/script.js"></script>
+	</head>
+	<body>
+		<center>
+			<fieldset>
+				<legend><h3>REGISTRATION FORM</h3></legend>
+				<br>
+				<form method="post" action="register_values.php" onsubmit="return registerValidate()">
+					<table cellpadding="5">
+						<tr><td>First name :</td><td><input type="text" name="fname" id="fname" /></td><td><span id="ferror"></span></td></tr>
+						<tr><td>Last name :</td><td><input type="text" name="lname" id="lname" /></td><td><span id="lerror"></span></td></tr>
+						<tr><td>DOB :</td><td><input type="date" name="dob" /></td></tr>
+						<tr><td>Email :</td><td><input type="email" name="email" id="email" /></td><td><span id="eerror"></span></td></tr>
+						<tr><td>Phone No :</td><td><input type="tel" name="phone" id="phone" maxlength="10" /></td><td><span id="pherror"></span></td></tr>
+						<tr><td>Address :</td><td><textarea placeholder="Address here.......!" cols="23" rows="3" name="address"></textarea></td></tr>
+						<tr>
+							<td>Year :</td>
+							<td>
+								<select name="year" style="width:170px;" required>
+									<option name="">Select</option>
+									<option name="E1">E1</option>
+									<option name="E2">E2</option>
+									<option name="E3">E3</option>
+									<option name="E4">E4</option>
+								</select>
+							</td>
+						</tr>
+						<tr><td>Fav Subjects :</td><td><input type="checkbox" name="WT" value="WT" /> WT <input type="checkbox" name="CN" value="CN" /> CN <input type="checkbox" name="CC" value="CC" /> CC <input type="checkbox" name="OOPs" value="OOPs" /> OOPs </td></tr>
+						<tr><td>User name :</td><td><input type="text" name="uname" /></td></tr>
+						<tr><td>Password :</td><td><input type="password" name="passwd" id="passwd" /></td><td><span id="perror"></span></td></tr>
+						<tr><td>Confirm Password :</td><td><input type="password" name="cpasswd" id="cpasswd" /></td><td><span id="cperror"></span></td></tr>
+						<tr>
+							<td>Security Question :</td>
+							<td>
+								<select name="security" style="width:170px;">
+									<option name="">Select</option>
+									<option name="Nick name">Nick name</option>
+									<option name="Best friend">Best friend</option>
+									<option name="Pet animal">Pet animal</option>
+									<option name="Fav.Book">Fav.Book</option>
+								</select>
+							</td>
+						</tr>
+						<tr><td>Security Answer :</td><td><textarea placeholder="Security Answer...!!" cols="23" rows="2" name="sqanswer"></textarea></td></tr>
+						<tr><td><button type="reset" >Reset</button></td><td><button type="submit" style="float:right;">Register</button></td></tr>
+						<tr><td colspan="2"><center><a href="login.html">Already have an account...??</a></center></td></tr>
+					</table>
+				</form>
+			</fieldset>
+		</center>
+	</body>
+</html>
